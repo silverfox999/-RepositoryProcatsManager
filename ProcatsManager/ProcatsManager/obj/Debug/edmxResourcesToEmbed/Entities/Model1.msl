@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DBProcatsModelContainer" CdmEntityContainer="DBProcatsEntities">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="DBProcatsModel.Clients">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="IDClient" ColumnName="IDClient" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Patronimic" ColumnName="Patronimic" />
+          <ScalarProperty Name="PasportDta" ColumnName="PasportDta" />
+          <ScalarProperty Name="DataOfBirth" ColumnName="DataOfBirth" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emploees">
+      <EntityTypeMapping TypeName="DBProcatsModel.Emploees">
+        <MappingFragment StoreEntitySet="Emploees">
+          <ScalarProperty Name="LastEntrance" ColumnName="LastEntrance" />
+          <ScalarProperty Name="IDEmploee" ColumnName="IDEmploee" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Patronimic" ColumnName="Patronimic" />
+          <ScalarProperty Name="E_mail" ColumnName="E-mail" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="SuccessfulLogin" ColumnName="SuccessfulLogin" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobTitle">
+      <EntityTypeMapping TypeName="DBProcatsModel.JobTitle">
+        <MappingFragment StoreEntitySet="JobTitle">
+          <ScalarProperty Name="IDJobTitle" ColumnName="IDJobTitle" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="DBProcatsModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="IDOrder" ColumnName="IDOrder" />
+          <ScalarProperty Name="CodeOrder" ColumnName="CodeOrder" />
+          <ScalarProperty Name="DataCrate" ColumnName="DataCrate" />
+          <ScalarProperty Name="CodeClient" ColumnName="CodeClient" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DataClosing" ColumnName="DataClosing" />
+          <ScalarProperty Name="TimeRental" ColumnName="TimeRental" />
+          <ScalarProperty Name="TimeOrder" ColumnName="TimeOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderStatus">
+      <EntityTypeMapping TypeName="DBProcatsModel.OrderStatus">
+        <MappingFragment StoreEntitySet="OrderStatus">
+          <ScalarProperty Name="IDOrderStatus" ColumnName="IDOrderStatus" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Services">
+      <EntityTypeMapping TypeName="DBProcatsModel.Services">
+        <MappingFragment StoreEntitySet="Services">
+          <ScalarProperty Name="IDService" ColumnName="IDService" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CodeServices" ColumnName="CodeServices" />
+          <ScalarProperty Name="СostPerHour" ColumnName="СostPerHour" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServicesOrder">
+      <EntityTypeMapping TypeName="DBProcatsModel.ServicesOrder">
+        <MappingFragment StoreEntitySet="ServicesOrder">
+          <ScalarProperty Name="IDServicesOrder" ColumnName="IDServicesOrder" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Service" ColumnName="Service" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DBProcatsModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

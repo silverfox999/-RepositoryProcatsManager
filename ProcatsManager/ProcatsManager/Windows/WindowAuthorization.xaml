@@ -1,0 +1,154 @@
+﻿<Window x:Class="ProcatsManager.Windows.WindowAuthorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProcatsManager.Windows"
+        mc:Ignorable="d"
+        Title="Курортный лесопарк"
+        MinHeight="440" 
+        MinWidth="350"
+        Height="440" 
+        Width="350"  
+        FontFamily="Comic Sans MS"
+        WindowStartupLocation="CenterScreen" Icon="/Windows/logo.png"
+        >
+    <Grid Background="#FF92D050">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock 
+            Grid.Column="1"
+            Grid.Row="1"
+            FontSize="35"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Text="Авторизация"
+            Margin="5"
+            />
+
+        <TextBlock 
+            Grid.Column="1"
+            Grid.Row="2"
+            FontSize="25"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Text="E-mail:"
+            Margin="5"
+            />
+        <TextBox
+            x:Name="tbxEmail"
+            Grid.Column="1"
+            Grid.Row="2"
+            FontSize="25"
+            Height="40"
+            Width="250"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Left"
+            Margin="5"
+            Background="{x:Null}"
+            BorderBrush="Black"
+            MaxLength="50"
+            />
+        <TextBlock 
+            Grid.Column="1"
+            Grid.Row="3"
+            FontSize="25"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Text="Пароль:"
+            Margin="5"
+            />
+        <TextBox
+            x:Name="tbxPassword"
+            Grid.Column="1"
+            Grid.Row="3"
+            FontSize="25"
+            Height="40"
+            Width="250"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Left"
+            Margin="5"
+            Background="{x:Null}"
+            BorderBrush="Black"
+            MaxLength="50"
+            />
+        <PasswordBox
+            x:Name="pbxPassword"
+            Grid.Column="1"
+            Grid.Row="3"
+            Height="40"
+            FontSize="25"
+            Width="250"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Left"
+            Margin="5"
+            Background="{x:Null}"
+            BorderBrush="Black"
+            MaxLength="50"
+            />
+        <Button
+            x:Name="btPasswordView"
+            VerticalAlignment="Bottom"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Left"
+            Grid.Column="1"
+            Grid.Row="3"
+            FontSize="25"
+            Height="40"
+            Width="40"
+            Margin="258,5,5,5"
+            BorderBrush="Black" 
+            Click="btPasswordView_Click"
+            >
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/imgPassvordView.png"/>
+            </Button.Background>
+        </Button>
+        <Button
+            x:Name="btPasswordNotView"
+            VerticalAlignment="Bottom"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Left"
+            Grid.Column="1"
+            Grid.Row="3"
+            FontSize="25"
+            Height="40"
+            Width="40"
+            Margin="258,5,5,5"
+            BorderBrush="Black"
+            Click="btPasswordNotView_Click"
+            >
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/imgPassvordNotView.png"/>
+            </Button.Background>
+        </Button>
+        <Button
+             x:Name="btLogin"
+            Content="Войти"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Grid.Column="1"
+            Grid.Row="4"
+            FontSize="25"
+            Height="40"
+            Width="150"
+            Margin="10"
+            BorderBrush="Black"
+            Background="#FF349C3D"
+            Click="btLogin_Click"
+            />
+
+    </Grid>
+</Window>
